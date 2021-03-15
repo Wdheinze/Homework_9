@@ -1,11 +1,10 @@
-$(function() {
-    $("button").click(function() {
+$(function () {
+    $("button").click(function () {
         showrickandmorty();
     }
 });
     });
 
-function showrickandmorty()
-{
+function showrickandmorty() {
     $("#rickAndMorty").html
 }
