@@ -14,9 +14,9 @@ $(function () {
 
 
 function showrickandmorty() {
-    $("#rickandmorty").html("hi")
+    //$("#rickandmorty").html("hi")
     $.getJSON("data/dataset.JSON", function (data) {
-
+        console.log(data);
         console.log(data.id);
         $("#rickandmorty").html(data.id);
 
