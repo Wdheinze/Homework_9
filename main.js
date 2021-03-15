@@ -1,4 +1,4 @@
-let rickAndMorty = {
+let rickandmorty = {
     "id": 216,
     "url": "https://www.tvmaze.com/shows/216/rick-and-morty",
     "name": "Rick and Morty",
