@@ -6,9 +6,15 @@ let rickAndMorty = {
     "language": "English"
 }
 
+$.fn.faden = function () {
+    this.css("background-image", "linear-gradient(white, black)");
+    return this;
+};
+
 $(function () {
     $("button").click(function () {
         showrickandmorty();
+        $("body").faden();
     });
 });
 
@@ -19,11 +25,10 @@ function showrickandmorty() {
         console.log(data);
         console.log(data[0].id);
         var temp = "";
-        for(var i = 0; i < data.length; i++)
-        {
-            temp = temp + data[i].id + "<br>" + data[i].url 
-            + "<br>" + data[i].name + "<br>" + data[i].type + "<br>"
-            + data[i].summary + "<p>";
+        for (var i = 0; i < data.length; i++) {
+            temp = temp + data[i].id + "<br>" + data[i].url
+                + "<br>" + data[i].name + "<br>" + data[i].type + "<br>"
+                + data[i].summary + "<p>";
         }
         $("#rickandmorty").html(temp);
 
